@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sajilothree">
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AppCollection.App"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning,InnerclassSeparator,UnusedAttribute">
+        <!--        This is added for crop image it should be always on the top-->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <activity
+            android:name=".ActivitiesPackage.FullImageViewPackage.FullImageActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.ForgotPassword.ResetPassword"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivitiesPackage.RegisterActivityPackage.OtpCodeVerification.OtpCodeVerification"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.ForgotPassword.ResetOTPVerification"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivitiesPackage.ForgotPassword.ResetPassword"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.ForgotPassword.EnterNewPasswordActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivitiesPackage.ForgotPassword.ResetOTPVerification"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.FeedbackReply.FeedbackReplyActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivitiesPackage.CProfilePackage.CProfileActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.BookingProcessPackage.UpdateBooking.UpdateBookingActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivitiesPackage.BookingProcessPackage.RequestPackage.RequestActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.BookingProcessPackage.FinalBookingDetailsPackage.FinalBookingDetails"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.BookingProcessPackage.RequestPackage.RequestActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.UserSavedPosts.SavedOfferGrid"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.UserSavedPosts.SavedOfferListDetails"
+            android:parentActivityName=".ActivitiesPackage.UserSavedPosts.SavedOfferGrid"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.UserFavorites.MyFavorites"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.BookingHistory.BookingHistory"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+
+        <activity
+            android:name=".ActivitiesPackage.BookingHistory.BookingHistoryDetails"
+            android:parentActivityName=".ActivitiesPackage.BookingHistory.BookingHistory"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.BookingProcessPackage.BookingPackage.FinalBookingActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.BookingProcessPackage.MakeBillPackage.MakeBill"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+
+        <activity
+            android:name=".ActivitiesPackage.SettingPackage.SwitchProfile.SwitchProfileActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+
+        <activity
+            android:name=".ActivitiesPackage.BookingProcessPackage.BookingPackage.BookingActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.SettingPackage.EnterOldPassword.ValidateOldPassword"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivitiesPackage.SettingPackage.Setting"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean"/>
+        <activity
+            android:name=".ActivitiesPackage.EditProfile.EditProfileActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.AddReview.AddReviewActivity"
+            android:parentActivityName=".ActivitiesPackage.EditProfile.EditProfileActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.EditProfile.AddNewDetailsForm.AddNewDetails"
+            android:parentActivityName=".ActivitiesPackage.EditProfile.EditProfileActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.RegisterActivityPackage.OtpCodeVerification.OtpCodeVerification"
+            android:parentActivityName=".ActivitiesPackage.OPTActivityPackage.OTPActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.RegisterActivityPackage.SelectType.SelectUserTypeActivity"
+            android:parentActivityName=".ActivitiesPackage.RegisterActivityPackage.OtpCodeVerification.OtpCodeVerification"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ActivitiesPackage.RegisterActivityPackage.RegisterForm.RegisterForm"
+            android:parentActivityName=".ActivitiesPackage.RegisterActivityPackage.SelectType.SelectUserTypeActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.ChatActivityPackage.ChatSystemActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.SplashScreenPackage.SplashScreen"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivitiesPackage.OPTActivityPackage.OTPActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.DisplaySearchPackage.DisplaySearchActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.QrCodePackage.QrCodeActivity"
+            android:label="Scan To Confirm"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.QrCodePackage.MyQrCode"
+            android:label="My QR-Code"
+            android:parentActivityName=".ActivitiesPackage.QrCodePackage.QrCodeActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.AddPackage.AddPostActivity"
+            android:label="Add Posts"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.SpProfilePackage.SpProfileActivity"
+            android:label="Profile"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.CProfilePackage.CProfileActivity"
+            android:label="QR-Code"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".ActivitiesPackage.SettingPackage.Setting"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            tools:ignore="InnerclassSeparator"
+            tools:targetApi="jelly_bean" />
+        <!--    launch mode is to not kill parent activity
+        android:launchMode="singleTop"-->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ActivitiesPackage.ServiceProvidersPackage.ServiceProvidersList"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.SliderActivityTheme"
+            tools:ignore="InnerclassSeparator" />
+
+        <receiver android:name=".NotificationReceiver.NotificationReceiver" />
+    </application>
+
+</manifest>

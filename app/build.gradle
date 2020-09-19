@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+// this is for error saying list and so on error
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.example.sajilothree"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    implementation 'com.google.firebase:firebase-core:17.4.1'
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+    implementation 'com.google.firebase:firebase-firestore:21.4.3'
+    implementation 'com.google.firebase:firebase-messaging:20.1.7'
+    implementation 'com.google.firebase:firebase-database:19.3.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+//    This is for bottom navigation view
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
+//    For search bar
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.2'
+//    This is for circular image view (it won't work in api label of above 19)
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+//    Expandable TextView
+    implementation 'com.ms-square:expandableTextView:0.1.4'
+//    This is for pie chart
+    implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
+//    Circular progress bar
+    implementation 'com.mikhaellopez:circularprogressbar:1.0.0'
+//    This is for swipe to get back to parent activity
+    implementation 'com.r0adkll:slidableactivity:2.0.6'
+//    These are for QR code in android
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'me.dm7.barcodescanner:zxing:1.9.8'
+//    This is for bottom sheet modal in android
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+
+//    This is for volley call
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+//    Shimmer effect
+    implementation 'com.facebook.shimmer:shimmer:0.5.0@aar'
+
+//    This is for glide image
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+//    Floating button shape
+    implementation 'com.github.JediBurrell:customFloatingActionButton:-SNAPSHOT'
+
+//    This is for signalr chat system
+    implementation 'com.microsoft.signalr:signalr:1.0.0'
+
+//    This is for pinview in android studio
+    implementation 'com.chaos.view:pinview:1.3.2'
+
+//    This is for crop image feature
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+//    This is for OTP using firebase
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.9.7'
+    implementation 'com.google.firebase:firebase-analytics:17.4.1'
+
+//    This is for Multiplex enable error
+    implementation 'com.android.support:multidex:1.0.3'
+
+    /*This is for unit testing*/
+    testImplementation  'junit:junit:4.12'
+    /*androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test:rules:1.2.0'*/
+
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

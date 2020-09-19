@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4A4576</color>
+    <color name="colorPrimaryDark">#404B76</color>
+    <color name="colorAccent">#2874A6</color>
+    <color name="red">#D81B60</color>
+
+    <color name="edit_edit_text">#33000000</color>
+    <!--D81B60-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="opacityWhite">#CCFFFFFF</color>
+    <color name="opacityBlack">#99000000</color>
+    <color name="silver">#cdc9c9</color>
+    <color name="blue">#2874A6</color>
+    <color name="slide_pager_opacity">#66000000</color>
+    <!--    <color name="search_slide_pager_opacity">#994A4576</color>-->
+    <color name="shimmerEffect">#99706D6D</color>
+    <color name="opacityPrimary">#404A4576</color>
+    <color name="signInBlue">#2E86C1</color>
+    <color name="MyMsgBlue">#ff0099cc</color>
+
+    <color name="opacityBlue">#1A2874A6</color>
+    <color name="opacity">#1A000000</color>
+
+    <color name="green">#4b9e2e</color>
+</resources><!--<color name="colorPrimary">#2E86C1  #2E86C1</color>
+    <color name="colorPrimaryDark">#2874A6    #2874A6</color>-->

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/my_profile" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/setting" />
+        <item
+            android:id="@+id/nav_saved_offers"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="@string/saved_offers" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/my_favorites" />
+        <item
+            android:id="@+id/nav_booking_history"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="@string/previous_bookings" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/ic_lock_black_24dp"
+            android:title="@string/privacy_policy" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="@string/about_roof_care" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="@string/give_feedback" />
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="@string/share_roof_care" />
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/ic_vpn_key_black_24dp"
+                android:title="@string/log_out" />
+        </menu>
+    </item>
+
+</menu>

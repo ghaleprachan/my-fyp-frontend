@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "742838436898",
+    "firebase_url": "https://otp-code-1f905.firebaseio.com",
+    "project_id": "otp-code-1f905",
+    "storage_bucket": "otp-code-1f905.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742838436898:android:ae29166c5c61567ed2f67b",
+        "android_client_info": {
+          "package_name": "com.example.sajilothree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742838436898-lflcs8r7g7lgb54m04ilmj4f42hn5uhp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sajilothree",
+            "certificate_hash": "1a2a26c487b998667fc9f577a9feb9c13791380d"
+          }
+        },
+        {
+          "client_id": "742838436898-ibtrb3vrulikuq0ljostcjq1jb66jmuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwbYQwpKWPJ4wPMpKFAr8HaCJhhN7AhGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742838436898-ibtrb3vrulikuq0ljostcjq1jb66jmuj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

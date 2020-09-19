@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.sajilothree.CustomViewPackage.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:nestedScrollingEnabled="true"
+    android:orientation="vertical"
+    tools:ignore="UnusedAttribute">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="When you want?"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="10dp"
+            app:boxStrokeErrorColor="@color/white">
+
+            <EditText
+                android:id="@+id/spName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_filed_relative_layout_backgroind"
+                android:drawablePadding="5dp"
+                android:focusable="false"
+                android:hint="Specialist Name"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:translationY="5dp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/register_edit_text_shadow" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/yourNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/yourName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_filed_relative_layout_backgroind"
+                android:drawablePadding="5dp"
+                android:focusable="false"
+                android:hint="Customer Name"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:translationY="5dp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/register_edit_text_shadow" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_filed_relative_layout_backgroind"
+            tools:ignore="RtlHardcoded">
+
+            <LinearLayout
+                android:id="@+id/servicesParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_play_for_work_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+                <Spinner
+                    android:id="@+id/servicesList"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/servicesParent"
+                android:background="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/servicesParent"
+                android:background="@drawable/register_edit_text_shadow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/selectDateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:paddingBottom="10dp">
+
+                <EditText
+                    android:id="@+id/selectDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_filed_relative_layout_backgroind"
+                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="false"
+                    android:hint="Date"
+                    android:inputType="date"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:translationY="5dp"
+                    tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/register_edit_text_shadow" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="3" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/selectTimeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingBottom="10dp">
+
+                <EditText
+                    android:id="@+id/selectTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_filed_relative_layout_backgroind"
+                    android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="false"
+                    android:hint="Time"
+                    android:inputType="time"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:translationY="5dp"
+                    tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/register_edit_text_shadow" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+        <com.jediburrell.customfab.FloatingActionButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            app:drawableTint="@color/white"
+            app:fabColor="@color/blue"
+            app:fabElevation="8dp"
+            app:fabIcon="@drawable/ic_arrow_forward_black_24dp"
+            app:fabSize="mini"
+            app:fabType="custom" />
+    </LinearLayout>
+</com.example.sajilothree.CustomViewPackage.BounceScrollView>

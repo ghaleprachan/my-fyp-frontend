@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/searchHere"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:background="@color/colorPrimary"
+        android:drawableStart="@drawable/ic_search_white_24dp"
+        android:drawableLeft="@drawable/ic_search_white_24dp"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/white"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:hint="@string/search_here_one"
+        android:inputType="text"
+        android:lines="1"
+        android:padding="10dp"
+        android:textColorHint="@color/opacityWhite"
+        android:textSize="16sp"
+        app:layout_collapseMode="pin"
+        tools:ignore="Autofill,TextFields,UnusedAttribute" />
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/searchHere"
+        android:background="@color/colorPrimary"
+        app:layout_collapseMode="pin">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/slideCityViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/dotsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <com.example.sajilothree.CustomViewPackage.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchHere"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="always"
+            android:paddingTop="160dp">
+
+            <include
+                layout="@layout/search_fragment_content_scrolling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </RelativeLayout>
+    </com.example.sajilothree.CustomViewPackage.BounceScrollView>
+</RelativeLayout>
